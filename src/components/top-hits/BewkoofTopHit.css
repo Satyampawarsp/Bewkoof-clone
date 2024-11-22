@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bewkoof{
+    font-family: 'Montserrat', sans-serif;
+}
+.card-img-top {
+    width: 100%;
+    height: auto; /* Default for larger screens */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+@media (max-width: 640px) {
+    .card-img-top {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .card-img-top {
+        height: 150px; /* Further adjust for very small screens */
+    }
+}

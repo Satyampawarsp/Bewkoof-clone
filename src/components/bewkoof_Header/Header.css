@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 30px; 
+    padding: 1px 10px;
+    background-color: #EEEEEE;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left-section ul, .right-section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.left-section {
+    margin-left: 10%;
+}
+
+.right-section {
+    margin-right: 10%;
+}
+
+.left-section ul li, .right-section ul li {
+    margin-right: 20px;
+}
+
+.left-section ul li a, .right-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-section ul li a:hover, .right-section ul li a:hover {
+    color: #ff5e00;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; 
+    margin-top: 0; /* Default margin for small screens */
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    margin-left: auto; 
+}
+
+.navbar-icons a {
+    margin-left: 10px; 
+    color: #333;
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 30px; 
+}
+@media (max-width: 991px) {
+    .main-header {
+        margin-top: 0; 
+        background-color: #ffd033; 
+    }
+}
+
+.mobile-left {
+    display: flex;
+    align-items: center; 
+}
+
+.mobile-logo img {
+    height: 20px;
+    width: 40px;
+    margin: 16px 7px;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    font-size: 20px !important;
+    cursor: pointer;
+    color: #333;
+}
+
+.mobile-icons a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.mobile-nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.mobile-nav nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav nav ul li {
+    margin: 3px;
+}
+
+.mobile-nav nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .main-header {
+        margin-top: 10px !important; 
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .search-bar {
+        display: block;
+    }
+
+    .nav-links ul {
+        display: flex;
+    }
+
+    .nav-links ul li {
+        margin-right: 20px;
+        list-style-type: none;
+    }
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none; 
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.search-bar {
+    width: 100%; /* Adjust this to your desired width */
+    max-width: 400px; /* Set a max width to prevent it from being too wide */
+    margin: 0 auto; 
+}
+
+.searchContainer {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: #EAEAEA; /* Default background color */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    border-radius: 2px;
+}
+
+.searchContainer i {
+    margin-left: 12px;
+}
+
+.searchInput {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    flex-grow: 1; /* Make the input fill the available space */
+    padding: 5px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    transition: border-color 0.3s ease; /* Smooth transition */
+    background-color: #EAEAEA;
+    margin-left: 1px;
+}
+
+.searchContainer:focus-within {
+    background-color: white; /* Change background color to white when input is focused */
+}
+
+.searchInput:focus {
+    background-color: white;
+    border-bottom: 1px solid orangered;
+}
+
+.searchInput::placeholder {
+    color: #aaa; /* Placeholder color */
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo img {
+    width: 150px;
+    position: absolute;
+    top: 7%;
+    left: 12%;
+    bottom: 0%;
+    right: 0%;
+}
+
+.sectionList {
+    background-color: #fff; /* White background for the section */
+    padding: 10px 0; /* Padding for top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin-top: 10px; /* Space above this section */
+}
+
+.sectionList ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.tabNav {
+    margin: 10px 15px; /* Space between tabs */
+}
+
+.tabNav a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Bootstrap primary color */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.tabNav a:hover {
+    color: #ff5e00; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sectionList ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .tabNav {
+        margin: 5px 0; /* Space for stacked items */
+    }
+}
+
+.navbar-icons a, .mobile-icons a {
+    margin-left: 10px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-icons a:hover, .mobile-icons a:hover {
+    color: #ff5e00; /* Change color on hover */
+}
+
+/* Adjust icon sizes in the mobile view */
+.mobile-icons a {
+    font-size: 22px; /* Larger icons for mobile */
+}
+
+/* Add some padding for better touch targets on mobile */
+.mobile-icons a {
+    padding: 10px; /* Increase padding */
+    border-radius: 5px; /* Slight rounding for touch targets */
+}
+
+.mobile-nav nav ul li a {
+    padding: 10px; /* Add padding for nav items */
+    border-radius: 5px; /* Rounded corners for mobile nav */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.mobile-nav nav ul li a:hover {
+    background-color: #ff5e00; /* Background change on hover */
+    color: white; /* Change text color on hover */
+}
+
+.horizontal-tabs {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping */
+    padding: 1px 0; /* Vertical padding */
+    background-color: transparent; 
+    font-family: 'Montserrat', sans-serif; /* Use the specified font */
+    font-size: 17px; /* Set font size */
+    position: sticky; /* Make the tabs sticky */
+    top: 5px; /* Add margin from the top */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.tab-list {
+    list-style: none; /* Remove default list styles */
+    padding: -1px; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: inline-flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Full width */
+}
+
+.tab-item {
+    flex-grow: 0; /* Prevent growing */
+    text-align: center; /* Center align text */
+    margin-right: 60px; /* Increase space between tabs */
+}
+
+.tab-item a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default color */
+    font-family: 'Montserrat', sans-serif; /* Use the specified font */
+    font-size: 17px; /* Set font size */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.07px;
+    vertical-align: baseline;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.tab-item a:hover {
+    color: #ff5e00; /* Change color on hover */
+}
+
+.horizontal-tabs::-webkit-scrollbar {
+    height: 6px; 
+    background-color: transparent; 
+}
+
+@media (min-width: 992px) {
+    .horizontal-tabs {
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    .mobile-icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mobile-icons i {
+        font-size: 20px;
+        width: 10%;
+        /* background-color: #ff5e00; */
+    }
+}

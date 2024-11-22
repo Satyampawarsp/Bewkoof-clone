@@ -1,0 +1,23 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.brand{
+    font-size: 30px;
+    font-family: "Ruwudu", serif;
+  font-weight: 400;
+  font-style: normal
+}
+@media (max-width: 300px) {
+    .brand {
+        font-size: 15px; /* Decrease font size */
+        margin-top: 0; /* Remove margin */
+        background-color: #ffd033; /* Apply background color */
+    }
+}
