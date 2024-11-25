@@ -8,6 +8,7 @@ import Worthit from '../../components/worth_Offer_Ani/Worthit'
 import Mans from '../../components/category/Mans'
 import Womens from '../../components/category/Womens'
 import OctobarFav from '../../components/octobar_Fav/OctobarFav'
+import BewkoofSneakers from '../../components/bewkoof_Sneakers/BewkoofSneakers'
 
 const Home = () => (
   <div>
@@ -20,6 +21,7 @@ const Home = () => (
     <BewkoofTopHit />
     <Mans/>
     <Womens/>
+    <BewkoofSneakers/>
 
   </div>
 )

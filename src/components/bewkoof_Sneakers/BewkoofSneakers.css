@@ -1,0 +1,134 @@
+.card img:hover {
+  transform: scale(1.03);
+}
+.card {
+  font-family: 'Montserrat', sans-serif;
+}
+.card img{
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 0.5rem; 
+}
+.shoping{
+  position:absolute;
+  top: 0%;
+  bottom:10%;
+  left:0%;
+  right: 0%;
+  font-size: xx-small;
+  background-color: gray;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.4em;
+  font-weight: 400;
+  color: white;
+  text-align:start;
+}
+.branding{
+  font-family:"montserrat, sans-serif";
+  font-size:25px;
+  line-height:22px;
+vertical-align:baseline;
+letter-spacing:normal;
+word-spacing:0px;
+font-weight:400;
+font-style:normal;
+font-variant:normal;
+text-transform:uppercase;
+text-decoration:none solid rgb(0, 0, 0);
+text-align:center;
+text-indent:0px;
+}
+.new-arrival {
+  background-image: url('https://images.bewakoof.com/uploads/grid/app/product-scroll-FESTIVE-1--2--1728486499.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 18px !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  background-color: #dbd2e94a;
+  border-radius: 50%;
+  width: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  font-size: 12px !important;
+  margin: 0; 
+}
+
+.heart-icon {
+  position: relative;
+  bottom: 60%;
+  font-size: larger;
+}
+
+.heart-icon:hover {
+  color: #f40707a9;
+}
+
+.offer {
+  font-size: small;
+  margin-left: 3%;
+  font-weight: bolder;
+  color: #35C776;
+}
+
+.discount {
+  font-size: 14px;
+  margin-left: 2%;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  margin: 0; 
+}
+h5 {
+  margin: 0; 
+}
+
+@media (max-width: 400px) {
+  .price {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .discount {
+      font-size: 14px;
+      font-weight: bolder;
+  }
+
+  .offer {
+      font-size: 15px;
+      margin-left: 5%;
+  }
+
+  .swiper-button-prev::after, .swiper-button-next::after {
+      font-size: 15px !important;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+      background-color: #f2eff72f;
+      border-radius: 50%;
+      width: 20px; /* Adjust as needed */
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+  }
+}
