@@ -9,6 +9,7 @@ import Mans from '../../components/category/Mans'
 import Womens from '../../components/category/Womens'
 import OctobarFav from '../../components/octobar_Fav/OctobarFav'
 import BewkoofSneakers from '../../components/bewkoof_Sneakers/BewkoofSneakers'
+import ShopByFandom from '../../components/shopByFandom/ShopByFandom'
 
 const Home = () => (
   <div>
@@ -22,6 +23,7 @@ const Home = () => (
     <Mans/>
     <Womens/>
     <BewkoofSneakers/>
+    <ShopByFandom/>
 
   </div>
 )

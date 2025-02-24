@@ -1,0 +1,32 @@
+.swiper-container {
+  width: 100%;
+  height: 70vh;
+  gap: 50px;
+  
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  margin-top: 23px;
+}
+
+.carousel-image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover; /* Ensures the image covers the space and retains aspect ratio */
+  margin: 0 0px; /* Optional: Add margin for additional spacing between images */
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto;
+    margin: 0 0px; /* Adjust margin for smaller screens */
+  }
+}

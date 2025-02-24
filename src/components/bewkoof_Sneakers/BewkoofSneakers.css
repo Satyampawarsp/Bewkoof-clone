@@ -124,7 +124,7 @@ h5 {
   .swiper-button-next, .swiper-button-prev {
       background-color: #f2eff72f;
       border-radius: 50%;
-      width: 20px; /* Adjust as needed */
+      width: 20px;
       height: 20px;
       display: flex;
       justify-content: center;

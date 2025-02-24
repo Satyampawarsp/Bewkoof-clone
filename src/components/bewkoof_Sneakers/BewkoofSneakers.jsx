@@ -256,7 +256,7 @@ const Sneakers = () => {
                         768: { slidesPerView: 4, spaceBetween: 25 },  
                         1024: { slidesPerView: 5, spaceBetween: 30 }, 
                     }}
-                    
+   
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product.id}>
